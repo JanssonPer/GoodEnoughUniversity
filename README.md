@@ -1,0 +1,2 @@
+# GoodEnoughUniversity
+Just good enough 
