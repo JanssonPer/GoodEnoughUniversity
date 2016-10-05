@@ -1,7 +1,7 @@
 ﻿--Print all the students who are eligible to study a course.
 --GetEligibleStudentsForCourse() TESTED - Works
 
-CREATE PROCEDURE dbo.GetEligibleStudentsForCourse
+CREATE PROCEDURE dbo.usp_GetEligibleStudentsForCourse
 	@courseCode char(6) = null
 AS
 SET XACT_ABORT, NOCOUNT ON

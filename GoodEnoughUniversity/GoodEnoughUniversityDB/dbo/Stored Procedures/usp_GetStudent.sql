@@ -5,7 +5,7 @@
 
 --GetStudent() TESTED - Works 
 
-CREATE PROCEDURE dbo.GetStudent
+CREATE PROCEDURE dbo.usp_GetStudent
 	@ssn char(10) = null
 AS
 SET XACT_ABORT, NOCOUNT ON

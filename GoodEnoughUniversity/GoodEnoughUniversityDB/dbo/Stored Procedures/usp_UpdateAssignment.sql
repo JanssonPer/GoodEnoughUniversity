@@ -1,13 +1,15 @@
-﻿--DeleteAssignment();
+﻿--UpdateAssignment(); TESTED - works
 
-CREATE PROCEDURE dbo.DeleteAssignment
-	@assignmentName char(20) = null,
+CREATE PROCEDURE dbo.usp_UpdateAssignment
+	@assignmentName varchar(20) = null,
+	@credits int = null,
 	@sectionCode char(10) = null,
 	@courseCode char(6) = null
 AS
 SET XACT_ABORT, NOCOUNT ON
 BEGIN TRY
-	DELETE FROM Assignment
+	UPDATE Assignment 
+	SET credits = @credits
 	WHERE assignmentName = @assignmentName AND sectionCode = @sectionCode AND courseCode = @courseCode
 END TRY
 BEGIN CATCH

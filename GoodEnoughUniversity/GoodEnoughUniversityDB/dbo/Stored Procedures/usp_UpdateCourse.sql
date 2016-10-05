@@ -1,5 +1,5 @@
 ﻿--UpdateCourse(); TESTED - Works
-CREATE PROCEDURE dbo.UpdateCourse
+CREATE PROCEDURE dbo.usp_UpdateCourse
 	@courseCode char(6) = null,
 	@courseName varchar(20) = null,
 	@prerequisite char(6) = null

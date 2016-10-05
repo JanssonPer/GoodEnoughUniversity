@@ -1,12 +1,12 @@
-﻿--DeleteCourse();
-
-CREATE PROCEDURE dbo.DeleteCourse
+﻿--DeleteSection();
+CREATE PROCEDURE dbo.usp_DeleteSection
+	@sectionCode char(10) = null,
 	@courseCode char(6) = null
 AS
 SET XACT_ABORT, NOCOUNT ON
 BEGIN TRY
-	DELETE FROM Course 
-	WHERE courseCode = @courseCode
+	DELETE FROM Assignment 
+	WHERE sectionCode = @sectionCode AND courseCode = @courseCode
 END TRY
 BEGIN CATCH
 	IF @@trancount > 0 ROLLBACK TRANSACTION

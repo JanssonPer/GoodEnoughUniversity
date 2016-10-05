@@ -1,6 +1,6 @@
 ﻿--UpdateStudent(); TESTED - Works
 
-CREATE PROCEDURE dbo.UpdateStudent
+CREATE PROCEDURE dbo.usp_UpdateStudent
 	@ssn char(10) = null,
 	@studentName varchar(55) = null,
 	@studentAddress varchar(100) = null,

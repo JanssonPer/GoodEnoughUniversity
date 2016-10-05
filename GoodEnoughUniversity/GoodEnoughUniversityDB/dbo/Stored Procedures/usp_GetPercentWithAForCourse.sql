@@ -1,6 +1,6 @@
 ﻿--Print percentage of high pass (VG) for each course.
 --GetPercentWithAForCourse() TESTED - Wtf bre? Wich course is selected and shit?
-CREATE PROCEDURE dbo.GetPercentWithAForCourse
+CREATE PROCEDURE dbo.usp_GetPercentWithAForCourse
 AS
 SET XACT_ABORT, NOCOUNT ON
 BEGIN TRY

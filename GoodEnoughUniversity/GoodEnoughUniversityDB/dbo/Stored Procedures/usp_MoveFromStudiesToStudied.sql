@@ -1,6 +1,6 @@
 ﻿--MoveFromStudiesToStudied(); TESTED - Works
 
-CREATE PROCEDURE dbo.MoveFromStudiesToStudied
+CREATE PROCEDURE dbo.usp_MoveFromStudiesToStudied
 	@ssn char(10) = null,
 	@courseCode char(6) = null,
 	@grade int = null

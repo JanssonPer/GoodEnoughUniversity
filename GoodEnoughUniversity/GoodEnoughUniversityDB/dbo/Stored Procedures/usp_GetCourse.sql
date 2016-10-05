@@ -1,5 +1,5 @@
 ﻿--GetCourse() TESTED - Works
-CREATE PROCEDURE dbo.GetCourse
+CREATE PROCEDURE dbo.usp_GetCourse
 	@courseCode varchar(6) = null
 AS
 SET XACT_ABORT, NOCOUNT ON

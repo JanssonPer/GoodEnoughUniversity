@@ -1,7 +1,7 @@
 ﻿--Print the study result of a given student for a given course. 
 --GetStudentResultForCourse() TESTED - Samma som GetGrade, borde kanske ändra GetGrade till att hämta alla grades?
 
-CREATE PROCEDURE dbo.GetStudentResultForCourse
+CREATE PROCEDURE dbo.usp_GetStudentResultForCourse
 	@courseCode char(6) = null,
 	@ssn char(10) = null
 AS

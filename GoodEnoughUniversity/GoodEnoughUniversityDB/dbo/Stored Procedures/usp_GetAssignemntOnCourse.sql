@@ -3,7 +3,7 @@
 
 --assignment for a given course
 --GetAssigmentsForCourse() TESTED - Works
-CREATE PROCEDURE dbo.GetAssignemntOnCourse
+CREATE PROCEDURE dbo.usp_GetAssignemntOnCourse
 	@courseCode char(6) = null
 AS
 SET XACT_ABORT, NOCOUNT ON

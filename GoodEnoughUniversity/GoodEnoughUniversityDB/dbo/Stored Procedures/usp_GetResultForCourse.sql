@@ -1,7 +1,7 @@
 ﻿--Print the study result of a given course for university register ( all information about students will be shown). 
 --GetResultForCourse() TESTED - Works
 
-CREATE PROCEDURE dbo.GetResultForCourse
+CREATE PROCEDURE dbo.usp_GetResultForCourse
 	@courseCode char(6) = null
 AS
 SET XACT_ABORT, NOCOUNT ON

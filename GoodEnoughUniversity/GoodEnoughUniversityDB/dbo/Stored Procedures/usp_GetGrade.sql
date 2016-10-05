@@ -1,7 +1,7 @@
 ﻿--Print the study result for a course. 
 --GetGrade() TESTED - Works
 
-CREATE PROCEDURE dbo.GetGrade
+CREATE PROCEDURE dbo.usp_GetGrade
 	@courseCode char(6) = null,
 	@ssn char(10) = null
 AS

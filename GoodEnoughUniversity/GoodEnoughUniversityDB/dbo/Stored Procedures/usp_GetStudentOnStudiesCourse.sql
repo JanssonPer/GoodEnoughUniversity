@@ -1,6 +1,6 @@
 ﻿--Studies  
 --GetStudentsOnStudiesCourse() TESTED - Works
-CREATE PROCEDURE dbo.GetStudentOnStudiesCourse
+CREATE PROCEDURE dbo.usp_GetStudentOnStudiesCourse
 	@courseCode char(6) = null
 AS
 SET XACT_ABORT, NOCOUNT ON

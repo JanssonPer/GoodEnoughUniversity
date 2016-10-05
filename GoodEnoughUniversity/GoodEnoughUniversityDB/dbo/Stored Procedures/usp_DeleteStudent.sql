@@ -1,6 +1,6 @@
 ﻿--DeleteStudent();
 
-CREATE PROCEDURE dbo.DeleteStudent
+CREATE PROCEDURE dbo.usp_DeleteStudent
 	@ssn char(10) = null
 AS
 SET XACT_ABORT, NOCOUNT ON
