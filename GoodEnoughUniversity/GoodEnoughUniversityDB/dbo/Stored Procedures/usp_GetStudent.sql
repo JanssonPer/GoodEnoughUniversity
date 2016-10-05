@@ -10,9 +10,21 @@ CREATE PROCEDURE dbo.usp_GetStudent
 AS
 SET XACT_ABORT, NOCOUNT ON
 BEGIN TRY
+	IF(SELECT st.studentType
+	FROM Student st
+	WHERE st.ssn = @ssn) = 'ExchangeStudent'
 	SELECT *
-	FROM Student
-	WHERE ssn = @ssn
+	FROM Student st
+	INNER JOIN ExchangeStudent es
+	ON st.ssn=es.ssn
+	WHERE st.ssn = @ssn
+	IF(SELECT st.studentType
+	FROM Student st
+	WHERE st.ssn = @ssn) = 'SwedishStudent'
+	SELECT *
+	FROM Student st
+	WHERE st.ssn = @ssn
+
 END TRY
 BEGIN CATCH
       IF @@trancount > 0 ROLLBACK TRANSACTION

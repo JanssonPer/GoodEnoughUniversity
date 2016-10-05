@@ -98,5 +98,8 @@
     <None Include="Scripts\ScriptsIgnoredOnImport.sql" />
     <Build Include="dbo\Default1.sql" />
     <Build Include="dbo\Stored Procedures\usp_CreateStudent.sql" />
+    <Build Include="dbo\Stored Procedures\usp_CreateCourse.sql" />
+    <Build Include="dbo\Stored Procedures\usp_CreateSection.sql" />
+    <Build Include="dbo\Stored Procedures\usp_CreateAssignment.sql" />
   </ItemGroup>
 </Project>

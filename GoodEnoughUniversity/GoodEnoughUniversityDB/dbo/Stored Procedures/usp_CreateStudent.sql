@@ -10,6 +10,11 @@ AS
 SET XACT_ABORT, NOCOUNT ON
 BEGIN TRY
 	INSERT INTO Student VALUES(@ssn, @studentName, @studentAddress, @studentType)
+
+	IF @studentType = 'SwedishStudent'
+		INSERT INTO SwedishStudent VALUES(@ssn)
+	IF @studentType = 'ExchangeStudent'
+		INSERT INTO ExchangeStudent VALUES(@countryOfOrigin, @ssn)
 	-- Insert trigger to create SwedishStudent or ExchangeStudent
 END TRY
 BEGIN CATCH
