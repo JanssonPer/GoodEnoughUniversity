@@ -15,10 +15,11 @@ AS
 DECLARE @ssn varchar(10)
 SELECT @ssn = ssn FROM inserted 
 IF EXISTS(
-			SELECT @ssn, Count(*) AS totalcredits
+			SELECT s.ssn, Count(*) AS totalcredits
 				FROM Studies s 
 					INNER JOIN Assignment a
 					ON a.courseCode = s.courseCode
+						WHERE ssn = @ssn
 						GROUP BY ssn
 						HAVING COUNT(*) >= 45)
 BEGIN
