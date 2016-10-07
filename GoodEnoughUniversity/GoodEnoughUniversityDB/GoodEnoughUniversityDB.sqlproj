@@ -68,7 +68,6 @@
     <Build Include="dbo\Tables\Course.sql" />
     <Build Include="dbo\Tables\Student.sql" />
     <Build Include="dbo\Tables\ExchangeStudent.sql" />
-    <Build Include="dbo\Tables\SwedishStudent.sql" />
     <Build Include="dbo\Tables\StudentPhone.sql" />
     <Build Include="dbo\Tables\Section.sql" />
     <Build Include="dbo\Tables\Assignment.sql" />

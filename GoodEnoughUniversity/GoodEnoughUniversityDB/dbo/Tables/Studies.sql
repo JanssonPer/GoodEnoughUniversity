@@ -23,7 +23,7 @@ IF EXISTS(
 						GROUP BY ssn
 						HAVING COUNT(*) >= 45)
 BEGIN
-PRINT ('A student can not study more than 45 credits');
+RAISERROR ('A student can not study more than 45 credits', 16, 1);
 ROLLBACK TRANSACTION;
 RETURN    
 END
