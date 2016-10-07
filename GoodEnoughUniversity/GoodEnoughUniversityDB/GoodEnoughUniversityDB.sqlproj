@@ -101,5 +101,6 @@
     <Build Include="dbo\Stored Procedures\usp_CreateCourse.sql" />
     <Build Include="dbo\Stored Procedures\usp_CreateSection.sql" />
     <Build Include="dbo\Stored Procedures\usp_CreateAssignment.sql" />
+    <Build Include="dbo\Stored Procedures\usp_AddStudentToCourse.sql" />
   </ItemGroup>
 </Project>
