@@ -22,6 +22,11 @@ namespace GoodEnoughUniversity.DataBaseAccessLayer
                 return c;
         }
 
+        public void CreateCourse(String courseCode, String courseName, String prerequisite) {
+
+            context.usp_CreateCourse(courseCode, courseName, prerequisite);
+        }
+
     }
 
    }
