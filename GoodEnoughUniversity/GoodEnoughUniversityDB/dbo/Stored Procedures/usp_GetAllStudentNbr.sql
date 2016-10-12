@@ -1,0 +1,12 @@
+﻿CREATE PROCEDURE dbo.usp_GetAllStudentNbr
+AS
+SET XACT_ABORT, NOCOUNT ON
+BEGIN TRY
+	SELECT *
+	FROM StudentPhone
+END TRY
+BEGIN CATCH
+	IF @@trancount > 0 ROLLBACK TRANSACTION
+	DECLARE @msg nvarchar(2048) = error_message()  
+	RAISERROR (@msg, 16, 1)
+END CATCH

@@ -112,7 +112,17 @@ namespace GoodEnoughUniversity.DataBaseAccessLayer
             return assignmentList;
         }
 
+        public List<StudentPhone> GetAllStudentNbr()
+        {
+            List<StudentPhone> studentPhoneList = context.usp_GetStudentPhone().ToList<Assignment>();
+        }
+
         //Create
+        public void CreateStudentPhone(String ssn, String studentPhone)
+        {
+            context.usp_CreateStudentPhone(ssn, StudentPhone);
+        }
+
         public void CreateCourse(String courseCode, String courseName, String prerequisite)
         {
             context.usp_CreateCourse(courseCode, courseName, prerequisite);
@@ -172,12 +182,16 @@ namespace GoodEnoughUniversity.DataBaseAccessLayer
             context.usp_UpdateAssignment(assignmentName, credits, sectionCode, courseCode);
         } 
 
+        //other
         public void MoveFromStudiesToStudied(String ssn, String courseCode, int grade)
         {
             context.usp_MoveFromStudiesToStudied(ssn, courseCode, grade);
         }
         
-
+        public void AddStudentToCourse(String ssn, String courseCode)
+        {
+            context.usp_AddStudentToCourse(ssn, courseCode);
+        }
 
     }
 
