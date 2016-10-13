@@ -1,7 +1,7 @@
 ﻿--CreateStudent();
 
 CREATE PROCEDURE dbo.usp_CreateStudent
-	@ssn int = null,
+	@ssn char(6) = null,
 	@studentName varchar(55) = null,
 	@studentAddress varchar(100) = null,
 	@studentType varchar(15) = null,

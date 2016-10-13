@@ -1,5 +1,5 @@
 ﻿--GetSections() TESTED - Works
-CREATE PROCEDURE dbo_uspGetSection
+CREATE PROCEDURE dbo.usp_GetSection
 	@sectionCode char(10) = null,
 	@courseCode char(6) = null
 AS

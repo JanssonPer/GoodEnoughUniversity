@@ -3,23 +3,23 @@ USE GoodEnoughUniversity
 GO
 
 INSERT INTO Student (ssn, studentName, studentAddress, studentType)
-Values ('111', 'Erik', 'Arkivgatan', 'Swedish student');
+Values ('111', 'Erik', 'Arkivgatan', 'SwedishStudent');
 GO
 
 INSERT INTO Student (ssn, studentName, studentAddress, studentType)
-Values ('222', 'Nils', 'Arkivgatan', 'Swedish student');
+Values ('222', 'Nils', 'Arkivgatan', 'SwedishStudent');
 GO
 
 INSERT INTO Student (ssn, studentName, studentAddress, studentType)
-Values ('333', 'Per', 'Kämmnärsgatan', 'Swedish student');
+Values ('333', 'Per', 'Kämmnärsgatan', 'SwedishStudent');
 GO
 
 INSERT INTO Student (ssn, studentName, studentAddress, studentType)
-Values ('444', 'Martin', 'Delphigatan', 'Swedish student');
+Values ('444', 'Martin', 'Delphigatan', 'SwedishStudent');
 GO
 
 INSERT INTO Student (ssn, studentName, studentAddress, studentType)
-Values ('555', 'Bob', 'Singaporegatan', 'Exchange student');
+Values ('555', 'Bob', 'Singaporegatan', 'ExchangeStudent');
 GO
 
 INSERT INTO Course(courseCode, courseName, prerequisite) 

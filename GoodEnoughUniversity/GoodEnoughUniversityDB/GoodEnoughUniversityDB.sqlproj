@@ -79,7 +79,7 @@
     <Build Include="dbo\Stored Procedures\usp_GetAssignment.sql" />
     <Build Include="dbo\Stored Procedures\usp_GetStudentOnStudiesCourse.sql" />
     <Build Include="dbo\Stored Procedures\usp_GetStudentOnStudiedCourse.sql" />
-    <Build Include="dbo\Stored Procedures\usp_GetAssignemntOnCourse.sql" />
+    <Build Include="dbo\Stored Procedures\usp_GetAssignmentOnCourse.sql" />
     <Build Include="dbo\Stored Procedures\usp_GetGrade.sql" />
     <Build Include="dbo\Stored Procedures\usp_GetStudentWhoPassedCourse.sql" />
     <Build Include="dbo\Stored Procedures\usp_GetEligibleStudentsForCourse.sql" />
@@ -95,7 +95,6 @@
     <Build Include="dbo\Stored Procedures\usp_DeleteSection.sql" />
     <Build Include="dbo\Stored Procedures\usp_MoveFromStudiesToStudied.sql" />
     <None Include="Scripts\ScriptsIgnoredOnImport.sql" />
-    <Build Include="dbo\Default1.sql" />
     <Build Include="dbo\Stored Procedures\usp_CreateStudent.sql" />
     <Build Include="dbo\Stored Procedures\usp_CreateCourse.sql" />
     <Build Include="dbo\Stored Procedures\usp_CreateSection.sql" />
@@ -104,5 +103,9 @@
     <Build Include="dbo\Stored Procedures\usp_GetAssigments.sql" />
     <Build Include="dbo\Stored Procedures\usp_GetCourses.sql" />
     <Build Include="dbo\Stored Procedures\usp_GetSections.sql" />
+    <Build Include="dbo\Stored Procedures\usp_GetStudents.sql" />
+    <Build Include="dbo\Stored Procedures\usp_CreateStudentPhone.sql" />
+    <Build Include="dbo\Stored Procedures\usp_GetAllStudentNbr.sql" />
+    <Build Include="dbo\Stored Procedures\usp_GetStudentFlow.sql" />
   </ItemGroup>
 </Project>

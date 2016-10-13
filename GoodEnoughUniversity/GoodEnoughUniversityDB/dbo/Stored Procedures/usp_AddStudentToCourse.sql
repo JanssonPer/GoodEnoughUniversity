@@ -10,7 +10,7 @@ BEGIN TRY
 			SELECT prerequisite 
 			FROM Course c 
 			WHERE c.courseCode =@courseCode 
-				INTERSECT
+			INTERSECT
 					SELECT courseCode
 					FROM Studied
 					WHERE ssn=@ssn

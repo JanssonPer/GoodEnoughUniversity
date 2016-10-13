@@ -5,7 +5,7 @@ CREATE PROCEDURE dbo.usp_CreateSection
 AS
 SET XACT_ABORT, NOCOUNT ON
 BEGIN TRY
-	INSERT INTO Course VALUES (@sectionCode, @courseCode)
+	INSERT INTO Section VALUES (@sectionCode, @courseCode)
 END TRY
 BEGIN CATCH
 	IF @@trancount > 0 ROLLBACK TRANSACTION

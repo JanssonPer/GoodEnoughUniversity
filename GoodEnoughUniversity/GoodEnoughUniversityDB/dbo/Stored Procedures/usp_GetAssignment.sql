@@ -1,5 +1,5 @@
 ﻿--GetAssignment() TESTED - Works
-CREATE PROCEDURE dbo.GetAssignment
+CREATE PROCEDURE dbo.usp_GetAssignment
 	@assignmentName varchar(20) = null,
 	@sectionCode char(10) = null,
 	@courseCode char(6) = null
